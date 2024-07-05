@@ -17,6 +17,7 @@
 
 # Solution
 class Solution:
+    # Function
     def nodesBetweenCriticalPoints(self, head: Optional[ListNode]) -> List[int]:
         prev = head
         head = head.next
