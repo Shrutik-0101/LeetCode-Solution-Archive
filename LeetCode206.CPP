@@ -9,6 +9,7 @@ Use two pointers: one for the current node, one for the reversed part.
 Always store the next node before changing pointers.
 */
 
+//Iterative Solution
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -22,5 +23,28 @@ public:
         }
 
         return node;        
+    }
+};
+
+//Recursive Solution
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        reverse(head, curr, prev);
+        return head;
+    }
+
+private:
+    void reverse(ListNode* &head, ListNode* &curr, ListNode* &prev){
+        if(curr == NULL){
+            head = prev;
+            return;
+        }
+
+        ListNode* forward = curr -> next;
+        reverse(head, forward, curr);
+        curr -> next = prev;
     }
 };
