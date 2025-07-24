@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"LeetCode121.C": "cpp",
+			"LeetCode.C": "cpp",
+			"LeetCode2149.C": "cpp",
+			"LeetCode31.C": "cpp",
+			"LeetCode128.C": "cpp",
+			"LeetCode73.C": "cpp",
+			"LeetCode48.C": "cpp",
+			"LeetCode54.C": "cpp",
+			"LeetCode229.C": "cpp",
+			"LeetCode15.C": "cpp",
+			"LeetCode18.C": "cpp",
+			"LeetCode88.C": "cpp",
+			"LeetCode33.C": "cpp"
+		}
+	}
+}
